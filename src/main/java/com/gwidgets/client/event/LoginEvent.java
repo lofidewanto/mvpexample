@@ -1,11 +1,10 @@
 package com.gwidgets.client.event;
 
-
 import com.google.gwt.event.shared.GwtEvent;
 
-public class LoginEvent extends GwtEvent<LoginEventHandler>{
+public class LoginEvent extends GwtEvent<LoginEventHandler> {
 	public static Type<LoginEventHandler> TYPE = new Type<LoginEventHandler>();
-	
+
 	@Override
 	public Type<LoginEventHandler> getAssociatedType() {
 		// TODO Auto-generated method stub
@@ -17,7 +16,5 @@ public class LoginEvent extends GwtEvent<LoginEventHandler>{
 		// TODO Auto-generated method stub
 		handler.onLogin(this);
 	}
-
-
 
 }

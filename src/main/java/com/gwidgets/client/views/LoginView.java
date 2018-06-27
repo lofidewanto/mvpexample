@@ -12,40 +12,45 @@ import com.google.gwt.user.client.ui.TextBox;
 import com.google.gwt.user.client.ui.Widget;
 
 public class LoginView extends Composite implements IsWidget {
+
 	HorizontalPanel container;
+
 	Label loginLabel;
+
 	Label passwordLabel;
+
 	TextBox loginField;
+
 	PasswordTextBox passwordField;
+
 	Button loginButton;
+
 	private Presenter presenter;
 
-	
 	public HasClickHandlers getLoginButton() {
 		return loginButton;
 	}
-	
-	public LoginView(){
+
+	public LoginView() {
 		container = new HorizontalPanel();
 		loginField = new TextBox();
 		loginButton = new Button("Login");
 		passwordField = new PasswordTextBox();
 		loginLabel = new Label("Login");
 		passwordLabel = new Label("Password");
-		
+
 		container.add(loginLabel);
 		container.add(loginField);
 		container.add(passwordLabel);
 		container.add(passwordField);
 		container.add(loginButton);
-		
 	}
 
 	@Override
 	public Widget asWidget() {
 		return container;
 	}
-	
+
 	public Presenter getPresenter() {
 		return presenter;
 	}
@@ -54,9 +59,11 @@ public class LoginView extends Composite implements IsWidget {
 		this.presenter = presenter;
 	}
 
-	public interface Presenter{
-	       public void goTo(Place place);
-	       public void loginButtonEvent();
+	public interface Presenter {
+
+		public void goTo(Place place);
+
+		public void loginButtonEvent();
 	}
 
 }

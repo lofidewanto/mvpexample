@@ -1,10 +1,6 @@
-## Dev Mode
+## Basic Example MVP with Activities and Places
 
-To run devmode: 
-
-`mvn clean package war:war`
-</br>
-`mvn gwt:devmode`
+This example uses GWT Boot: https://github.com/gwtboot/gwt-boot-samples
 
 
 

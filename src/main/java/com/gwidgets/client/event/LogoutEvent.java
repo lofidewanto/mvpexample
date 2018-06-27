@@ -2,10 +2,9 @@ package com.gwidgets.client.event;
 
 import com.google.gwt.event.shared.GwtEvent;
 
+public class LogoutEvent extends GwtEvent<LogoutEventHandler> {
 
-public class LogoutEvent extends GwtEvent<LogoutEventHandler>{
-	
-	 public static Type<LogoutEventHandler> TYPE = new Type<LogoutEventHandler>();
+	public static Type<LogoutEventHandler> TYPE = new Type<LogoutEventHandler>();
 
 	@Override
 	public Type<LogoutEventHandler> getAssociatedType() {
@@ -16,7 +15,7 @@ public class LogoutEvent extends GwtEvent<LogoutEventHandler>{
 	@Override
 	protected void dispatch(LogoutEventHandler handler) {
 		handler.onLogout(this);
-		
+
 	}
 
 }
