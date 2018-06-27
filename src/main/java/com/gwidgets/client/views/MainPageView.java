@@ -68,7 +68,6 @@ public class MainPageView extends Composite implements IsWidget {
 		TextColumn<String> column1 = new TextColumn<String>() {
 			@Override
 			public String getValue(String object) {
-				// TODO Auto-generated method stub
 				return object.split(" ")[0];
 			}
 
